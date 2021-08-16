@@ -172,6 +172,7 @@ class _PlatformMapState extends State<PlatformMap> {
   Widget build(BuildContext context) {
     if (Platform.isAndroid) {
       return googleMaps.GoogleMap(
+        mapToolbarEnabled: false,
         initialCameraPosition:
             widget.initialCameraPosition.googleMapsCameraPosition,
         compassEnabled: widget.compassEnabled,
