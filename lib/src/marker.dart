@@ -201,7 +201,7 @@ class Marker {
         markerId: marker.markerId.googleMapsMarkerId,
         alpha: marker.alpha,
         anchor: Offset(0.5, 1.0),
-        consumeTapEvents: false,
+        consumeTapEvents: marker.consumeTapEvents,
         draggable: marker.draggable,
         infoWindow: marker.infoWindow.googleMapsInfoWindow,
         onTap: marker.onTap,
